@@ -1,0 +1,13 @@
+function(request, logger) {
+
+    '<%- stringify(filename, 'modules/service1/success_post/data_test_success_post.ejs') %>'
+    
+    var req = JSON.parse(request.body);
+    
+        if (mobile_acc.indexOf(req.mobileNumber) !== -1) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }

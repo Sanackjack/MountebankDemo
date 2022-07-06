@@ -1,0 +1,13 @@
+{
+    "and" : [{
+        "equals": {
+            "method": "GET"
+        }
+    }, {
+        "matches" : {
+            "path" : "^\/bank_account/\\d+"
+        }
+    },{
+        "inject" : "<%- stringify(filename, 'modules/service1/success_get/injection.ejs') %>"
+    }]
+}

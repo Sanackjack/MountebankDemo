@@ -1,0 +1,1 @@
+mb --pidfile /tmp/mb.pid --logfile mb.log --configfile imposters.ejs --allowInjection

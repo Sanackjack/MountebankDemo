@@ -1,0 +1,17 @@
+{
+    "port": "<%= service1_port %>",
+    "protocol": "http",
+    "name" : "ourService to service1",
+    "stubs": [{
+        "responses": [ <% include success_get/response.ejs %> ],
+        "predicates": [ <% include success_get/predicate.ejs %> ]
+    },
+    {
+        "responses": [ <% include success_post/response.ejs %> ],
+        "predicates": [ <% include success_post/predicate.ejs %> ]
+    },
+    {
+        "responses": [ <% include proxy/service1_proxy.ejs%> ]
+    }]
+
+}

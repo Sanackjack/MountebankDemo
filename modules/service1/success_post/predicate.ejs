@@ -1,0 +1,10 @@
+{
+    "and" : [{
+    "equals": {
+    "method": "POST",
+    "path" : "/otp/mobile"
+}
+    },{
+        "inject" : "<%- stringify(filename, 'modules/service1/success_post/injection.ejs') %>"
+    }]
+}
